@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>A4988 vs DRV8825 Chinese Stepper Driver Boards/ru - RepRapWiki</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.1">
+<link rel="shortcut icon" href="http://reprap.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://reprap.org/mediawiki/opensearch_desc.php" title="RepRapWiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://reprap.org/mediawiki/api.php?action=rsd">
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html">
+<link rel="alternate" type="application/atom+xml" title="RepRapWiki Atom feed" href="http://reprap.org/mediawiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="alternate" type="application/rss+xml" title="RepRapWiki RSS feed" href="http://reprap.org/mediawiki/index.php?title=Special:RecentChanges&amp;feed=rss">
+<link rel="stylesheet" href="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/load_002.css">
+<style>
+.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:4250852ed2349a0d4d0fc6509a3e7d4c */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.autoellipsis-matched,.highlight{font-weight:bold}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:9780324491b653a3780e2d029bdc140c */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{text-decoration:none;color:black}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:52b1797f70c7e4094dfa4191101944e8 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/load.css">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:0c3e4654831aeb1f565f4042e7f0f926 */</style>
+
+<script src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/ca-pub-7619640428450381.js"></script><script src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/load_002.php"></script><script src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/load_003.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru","wgTitle":"A4988 vs DRV8825 Chinese Stepper Driver Boards/ru","wgCurRevisionId":154254,"wgArticleId":41015,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Stepper motor drivers"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRestrictionRead":[],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":6,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs274":false,"searchNs275":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mediawiki_121:resourceloader:filter:minify-js:7:693c4e15be025fa0b3a3b7a8bd3447ec */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/load.php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mediawiki/skins/vector/csshover.min.htc")}</style><![endif]--><script async="" src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/load_004.php"></script></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards_ru skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">A4988 vs DRV8825 Chinese Stepper Driver Boards/ru</span></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From RepRapWiki</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"><span class="subpages">&lt; <a href="http://reprap.org/wiki/A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards" title="A4988 vs DRV8825 Chinese Stepper Driver Boards">A4988 vs DRV8825 Chinese Stepper Driver Boards</a></span></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-navigation">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><div class="LanguageLinks">
+<table style="clear: both; border-collapse: collapse; padding: 0; margin: 0; font-size: 85%;" width="100%">
+<tbody><tr style="background: #ffffff" valign="top">
+<td style="padding: 1px 1em 0; background: #ffffff;">
+<p><a href="http://reprap.org/wiki/A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards" title="A4988 vs DRV8825 Chinese Stepper Driver Boards">English</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ar&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/ar (page does not exist)">العربية</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/bg&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/bg (page does not exist)">български</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ca&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/ca (page does not exist)">català</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/cs&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/cs (page does not exist)">česky</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/de&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/de (page does not exist)">Deutsch</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/el&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/el (page does not exist)">Ελληνικά</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/es&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/es (page does not exist)">español</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/fa&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/fa (page does not exist)">فارسی</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/fr&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/fr (page does not exist)">français</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/hr&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/hr (page does not exist)">hrvatski</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/hu&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/hu (page does not exist)">magyar</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/it&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/it (page does not exist)">italiano</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ro&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/ro (page does not exist)">română</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ja&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/ja (page does not exist)">日本語</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/kr&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/kr (page does not exist)">한국어</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/lt&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/lt (page does not exist)">lietuvių</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/nl&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/nl (page does not exist)">Nederlands</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/no&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/no (page does not exist)">norsk bokmål</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/pl&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/pl (page does not exist)">polski</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/pt&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/pt (page does not exist)">português</a>&nbsp;•&nbsp;
+<strong class="selflink">русский</strong>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/tr&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/tr (page does not exist)">Türkçe</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ua&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/ua (page does not exist)">українська</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/zh_cn&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/zh cn (page does not exist)">中文（中国大陆）‎</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/zh_tw&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/zh tw (page does not exist)">中文（台灣）‎</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/he&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/he (page does not exist)">עברית</a>&nbsp;•&nbsp;
+<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/az&amp;action=edit&amp;redlink=1" class="new" title="A4988 vs DRV8825 Chinese Stepper Driver Boards/az (page does not exist)">azərbaycanca</a>&nbsp;•&nbsp;
+</p>
+</td></tr></tbody></table></div>
+<p><br>
+Комбинация из Arduino Mega 2560 + <a href="http://reprap.org/wiki/RAMPS_1.4" title="RAMPS 1.4">RAMPS 1.4</a>
+ (появившаяся в Декабре 2014) широко доступна и широко используется для 
+управления 3D принтера, либо в виде оригинальных компонентов, либо чаще 
+из недорогих "Сделано в Китае" клонов. Недорогие "Pololu-style" платы 
+шагового драйвера точно так же  подключаются напрямую на плату RAMPS 
+(обычно используется четыре или пять плат шагового драйвера) доступны из
+ Китая с двумя различными микросхемами шагового драйвера, а именно <i>Allegro A4988</i> и <i>Texas Instruments DRV8825</i>.
+</p><p>В то время как "Сделанные в Китае" платы шагового драйвера 
+DRV8825 наиболее близкие или идентичные клоны оригинального Pololu платы
+ шагового драйвера DRV8825, плата шагового драйвера A4988 наиболее 
+близкий или идентичный клон платы шагового драйвера <a href="http://reprap.org/wiki/StepStick" title="StepStick">StepStick</a>. Плата шагового драйвера <a href="http://reprap.org/wiki/StepStick" title="StepStick">StepStick</a> совместима по контактам с <a href="http://reprap.org/wiki/Pololu_stepper_driver_board" title="Pololu stepper driver board">Pololu A4988 Stepper Motor Driver Carrier</a>, но имеет отличия в разводке печатной платы, которая бесплатно доступна под лицензией GPLv2.
+</p><p><br>
+<a href="http://reprap.org/wiki/File:RAMPS_1.4_1b.jpg" class="image" title="недорогая &quot;Сделано в Китае&quot; плата RAMPS 1.4 без плат шаговых драйверов."><img alt="недорогая &quot;Сделано в Китае&quot; плата RAMPS 1.4 без плат шаговых драйверов." src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/600px-RAMPS_1.jpg" data-url="/mediawiki/images/thumb/0/07/RAMPS_1.4_1b.jpg/600px-RAMPS_1.4_1b.jpg" style="display: inline;" height="458" width="600"></a>
+</p><p><br>
+Насколько дорого эти платы шагового драйвера могут стоить? Ну, прямо 
+сейчас партия из пяти "Сделано в Китае" плат шагового драйвера A4988 
+стоит примерно $6.80, в то время как аналогичный набор из пяти "сделано в
+ Китае" плат шагового драйвера DRV8825 доступен примерно за $10.
+Некоторые DRV8825 можно найти по цене $1.62 за штуку. 
+</p><p><br>
+<a href="http://reprap.org/wiki/File:Stepper_drivers_a4988_drv8825_3a.jpg" class="image" title="A4988 and DRV8825 stepper driver boards side by side."><img alt="A4988 and DRV8825 stepper driver boards side by side." src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/600px-Stepper_drivers_a4988_drv8825_3a.jpg" data-url="/mediawiki/images/thumb/d/df/Stepper_drivers_a4988_drv8825_3a.jpg/600px-Stepper_drivers_a4988_drv8825_3a.jpg" style="display: inline;" height="330" width="600"></a> <a href="http://reprap.org/wiki/File:StepStick_china_red_front.jpg" class="image" title="A different A4988 based stepper driver."><img alt="A different A4988 based stepper driver." src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/280px-StepStick_china_red_front.jpg" data-url="/mediawiki/images/thumb/f/f5/StepStick_china_red_front.jpg/280px-StepStick_china_red_front.jpg" style="display: inline;" height="329" width="280"></a>
+</p><p><br>
+Эта ситуация наводит на некоторые интересные вопросы: стоит ли 
+использовать платы шагового драйвера DRV8825 вместо более популярных 
+плат A4988 или нет? Кто из них лучше подходит для моего 3D принтера? 
+Какие из них более надёжны / менее надёжны? Могу ли я смешивать платы 
+A4988 с платами DRV8825? Есть ли какие то предостережения при 
+использования этих плат, которые я должен знать?
+</p><p><br>
+Эта страница является попыткой дать исчерпывающую информацию, чтобы 
+сделать рациональный выбор и ответить на эти и другие родственные 
+вопросы, если это возможно.
+</p><p><br>
+<a href="http://reprap.org/wiki/File:Stepper_drivers_a4988_drv8825_4a.jpg" class="image" title="A4988 and DRV8825 stepper driver boards, underside."><img alt="A4988 and DRV8825 stepper driver boards, underside." src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/600px-Stepper_drivers_a4988_drv8825_4a.jpg" data-url="/mediawiki/images/thumb/f/f3/Stepper_drivers_a4988_drv8825_4a.jpg/600px-Stepper_drivers_a4988_drv8825_4a.jpg" style="display: inline;" height="387" width="600"></a> <a href="http://reprap.org/wiki/File:StepStick_china_red_back.jpg" class="image" title="A different A4988 based stepper driver."><img alt="A different A4988 based stepper driver." src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/345px-StepStick_china_red_back.jpg" data-url="/mediawiki/images/thumb/e/e8/StepStick_china_red_back.jpg/345px-StepStick_china_red_back.jpg" style="display: inline;" height="386" width="345"></a>
+</p><p><br>
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.9F.D0.BB.D0.B0.D1.82.D0.B0_.D1.88.D0.B0.D0.B3.D0.BE.D0.B2.D0.BE.D0.B3.D0.BE_.D0.B4.D1.80.D0.B0.D0.B9.D0.B2.D0.B5.D1.80.D0.B0_A4988"><span class="tocnumber">1</span> <span class="toctext">Плата шагового драйвера A4988</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.D0.A2.D0.BE.D0.BA.D0.BE.D1.87.D1.83.D0.B2.D1.81.D1.82.D0.B2.D0.B8.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D1.8B.D0.B9_.D1.80.D0.B5.D0.B7.D0.B8.D1.81.D1.82.D0.BE.D1.80_.28Rs.29"><span class="tocnumber">1.1</span> <span class="toctext">Токочувствительный резистор (Rs)</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#.D0.9E.D1.80.D0.B8.D0.B5.D0.BD.D1.82.D0.B0.D1.86.D0.B8.D1.8F_A4988"><span class="tocnumber">1.2</span> <span class="toctext">Ориентация A4988</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.9F.D0.BB.D0.B0.D1.82.D0.B0_.D1.88.D0.B0.D0.B3.D0.BE.D0.B2.D0.BE.D0.B3.D0.BE_.D0.B4.D1.80.D0.B0.D0.B9.D0.B2.D0.B5.D1.80.D0.B0_DRV8825"><span class="tocnumber">2</span> <span class="toctext">Плата шагового драйвера DRV8825</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#.D0.9E.D1.80.D0.B8.D0.B5.D0.BD.D1.82.D0.B0.D1.86.D0.B8.D1.8F_DRV8825"><span class="tocnumber">2.1</span> <span class="toctext">Ориентация DRV8825</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#.D0.9F.D0.BE.D0.B4.D1.81.D1.82.D1.80.D0.BE.D0.B5.D1.87.D0.BD.D0.BE.D0.B5_.D1.81.D0.BE.D0.BF.D1.80.D0.BE.D1.82.D0.B8.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5"><span class="tocnumber">2.2</span> <span class="toctext">Подстроечное сопротивление</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.A1.D0.BC.D0.B5.D1.88.D0.B8.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.88.D0.B0.D0.B3.D0.BE.D0.B2.D1.8B.D1.85_.D0.B4.D1.80.D0.B0.D0.B9.D0.B2.D0.B5.D1.80.D0.BE.D0.B2_A4988_.D0.B8_DRV8825"><span class="tocnumber">3</span> <span class="toctext">Смешивание шаговых драйверов A4988 и DRV8825</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.A2.D0.B0.D0.B1.D0.BB.D0.B8.D1.86.D0.B0_.D1.81.D1.80.D0.B0.D0.B2.D0.BD.D0.B5.D0.BD.D0.B8.D1.8F"><span class="tocnumber">4</span> <span class="toctext">Таблица сравнения</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Datasheets"><span class="tocnumber">5</span> <span class="toctext">Datasheets</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.D0.A1.D0.BB.D1.83.D1.87.D0.B0.D0.B8_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F"><span class="tocnumber">6</span> <span class="toctext">Случаи использования</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h2> <span class="mw-headline" id=".D0.9F.D0.BB.D0.B0.D1.82.D0.B0_.D1.88.D0.B0.D0.B3.D0.BE.D0.B2.D0.BE.D0.B3.D0.BE_.D0.B4.D1.80.D0.B0.D0.B9.D0.B2.D0.B5.D1.80.D0.B0_A4988"> Плата шагового драйвера A4988 </span></h2>
+<p>I am pretty confident that the Allegro A4988 is an utterly tested and
+ proven solution to drive stepper motors in RepRap 3D printers, and this
+ fact should not be overlooked. As long as the following three 
+conditions are met, these Made in China Allegro A4988 stepper driver 
+boards seem to be bullet-proof workhorses:
+</p>
+<ol><li> The stepper driver boards should not be inserted backwards in their respective slots on the controller board (Doh!).
+</li><li> The stepper cables should not be disconnected from the boards while powered on.
+</li><li> Proper airflow (i.e. active cooling or in other words, a fan) should be provided.
+</li></ol>
+<p>Incredibly enough that last condition is often not met, as many 3D 
+printer kits seem to dispense with the use of a fan blowing some cool 
+air over the controller and stepper driver boards and depend solely on 
+convection / radiation. It is up to the users/builders to later add a 
+fan on their own... or suffer the consequences!
+</p><p><a href="http://reprap.org/wiki/File:Inexpensive_stepper_driver_board_a4988_1a.jpg" class="image" title="An inexpensive &quot;Made in China&quot; Pololu-style stepper driver board based on the popular Allegro 4988 IC."><img alt="An inexpensive &quot;Made in China&quot; Pololu-style stepper driver board based on the popular Allegro 4988 IC." src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/600px-Inexpensive_stepper_driver_board_a4988_1a.jpg" data-url="/mediawiki/images/thumb/9/9c/Inexpensive_stepper_driver_board_a4988_1a.jpg/600px-Inexpensive_stepper_driver_board_a4988_1a.jpg" style="display: inline;" height="678" width="600"></a>
+</p><p>Не самое лучшее качество печатной платы и припоя, которое я видел в своей жизни, но ... она работает!
+</p>
+<h3> <span class="mw-headline" id=".D0.A2.D0.BE.D0.BA.D0.BE.D1.87.D1.83.D0.B2.D1.81.D1.82.D0.B2.D0.B8.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D1.8B.D0.B9_.D1.80.D0.B5.D0.B7.D0.B8.D1.81.D1.82.D0.BE.D1.80_.28Rs.29"> Токочувствительный резистор (Rs) </span></h3>
+<p>Примечательно, что оригинальная плата шагового драйвера <a href="http://reprap.org/wiki/StepStick" title="StepStick">StepStick</a> использует 0.2 Ohm <i>токочувствительный резистор</i> (Rs) в то время как оригинальный <a href="http://reprap.org/wiki/Pololu_stepper_driver_board" title="Pololu stepper driver board">Pololu A4988 stepper driver boards</a>
+ использует 0.05 Ohm токочувствительный резистор. Тем не менее, "Сделано
+ в Китае" плата шагового драйвера A4988 может использовать различные 
+токочувствительные резисторы в зависимости от производителя (обычно либо
+ 0,05 Ом, 0,1 Ом или 0,2 Ом). Токочувствительный резистор это два 
+маленьких чёрных компонента рядом с основным чипом. Сравните фотографию 
+выше и проверьте детали ниже: зелёная "Сделано в Китае" плата A4988 идет
+ с токочувствительный резистором 0.1 Ом (маркируются "R100") в то время 
+как красный <a href="http://reprap.org/wiki/StepStick" title="StepStick">StepStick</a>
+ "Сделано в Китае" клон идёт с токочувствительный резистором 0.2 Ом 
+(маркируется "R200"), в то время как другие "Сделано в Китае" платы 
+A4988 могут идти с токочувствительный резистором 0.05 Ом (маркируются 
+"R050"). Поэтому очень важно чтобы вы незамедлительно проверили вашу 
+плату шагового драйвера и использовали точные значения 
+токочувствительного резистора при расчете Vref по формуле (см. ниже).
+</p><p><a href="http://reprap.org/wiki/File:A4988_detail_current_sense_r_1a.jpg" class="image" title="Недорогой &quot;Сделано в Китае&quot; Pololu-style плата шагового драйвера A4988 использует 0.1 Ohm токочувствительный резистор, детали."><img alt="Недорогой &quot;Сделано в Китае&quot; Pololu-style плата шагового драйвера A4988 использует 0.1 Ohm токочувствительный резистор, детали." src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/600px-A4988_detail_current_sense_r_1a.jpg" data-url="/mediawiki/images/thumb/3/31/A4988_detail_current_sense_r_1a.jpg/600px-A4988_detail_current_sense_r_1a.jpg" style="display: inline;" height="432" width="600"></a>
+</p>
+<h3> <span class="mw-headline" id=".D0.9E.D1.80.D0.B8.D0.B5.D0.BD.D1.82.D0.B0.D1.86.D0.B8.D1.8F_A4988"> Ориентация A4988 </span></h3>
+<p><b>ВАЖНО!</b> Как уже упоминалось выше, установка шагового драйвера 
+A4988 в неправильное положение убъёт его и возможно повредит плату RAMPS
+ сразу после подачи напряжения, поэтому будьте внимательны с правильной 
+ориентацией платы шагового драйвера, когда устанавливаете его в его 
+сокет на плате контроллера. <b>Когда вставляете в плату RAMPS 1.4, 
+подстроечное сопротивление драйвера A4988 должно указывать на сторону, 
+где расположены контакты LCD экрана</b>.
+</p>
+<h2> <span class="mw-headline" id=".D0.9F.D0.BB.D0.B0.D1.82.D0.B0_.D1.88.D0.B0.D0.B3.D0.BE.D0.B2.D0.BE.D0.B3.D0.BE_.D0.B4.D1.80.D0.B0.D0.B9.D0.B2.D0.B5.D1.80.D0.B0_DRV8825"> Плата шагового драйвера DRV8825 </span></h2>
+<p>И вот новый кандидат, плата шагового драйвера основанная на Texas Instruments DRV8825:
+</p><p><br>
+<a href="http://reprap.org/wiki/File:DRV8825_stepper_driver_module_1a.jpg" class="image" title="DRV8825 недорогая плата шагового драйвера."><img alt="DRV8825 недорогая плата шагового драйвера." src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/600px-DRV8825_stepper_driver_module_1a.jpg" data-url="/mediawiki/images/thumb/9/9e/DRV8825_stepper_driver_module_1a.jpg/600px-DRV8825_stepper_driver_module_1a.jpg" style="display: inline;" height="821" width="600"></a>
+</p><p><br>
+</p>
+<h3> <span class="mw-headline" id=".D0.9E.D1.80.D0.B8.D0.B5.D0.BD.D1.82.D0.B0.D1.86.D0.B8.D1.8F_DRV8825"> Ориентация DRV8825 </span></h3>
+<p><b>ВАЖНО!</b> Как показано на картинках выше, плата шагового драйвера DRV8825 имеет подстроечное сопротивление на <b>другой стороне</b>
+ печатной платы по сравнению с платой A4988, поэтому будьте внимательны с
+ правильной ориентацией платы шагового драйвера, когда устанавливаете 
+его в его сокет на плате контроллера. <b>Когда вставляете в плату RAMPS 
+1.4, подстроечное сопротивление драйвера DRV8825 должно указывать на 
+сторону, где расположен USB порт Ардуино или разъем питания RAMPS</b>.
+</p>
+<h3> <span class="mw-headline" id=".D0.9F.D0.BE.D0.B4.D1.81.D1.82.D1.80.D0.BE.D0.B5.D1.87.D0.BD.D0.BE.D0.B5_.D1.81.D0.BE.D0.BF.D1.80.D0.BE.D1.82.D0.B8.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5"> Подстроечное сопротивление </span></h3>
+<p>По умолчанию эти "Сделано в Китае" платы шагового драйвера DRV8825 
+приходят с Vref установленной в ~1.6V которое, если формула приведённая 
+ниже правильна, слишком высокое и может даже повредить шаговый 
+двигатель. Первая вещь которую вы должны сделать перед использованием 
+драйвера DRV8825 это повернуть подстроечное сопротивление по часовой 
+стрелке и уменьшать Vref примерно до 0.5V (1A тока), а  затем сделать 
+тонкую настройку.
+</p><p>Другая важная вещь которую следует помнить, это что Сделанные в 
+Китае копии не идентичны оригинальной плате Pololu DRV8825. The exposed 
+via, который соединяет Vref на оригинальной плате, на самом деле 
+подключен к мосту B контакта питания (11) на "Сделанной в Китае" плате 
+DRV8825. In order to set Vref, you have to measure it off of pins 12 
+and/or 13 on the actual chip or from the center pin of the adjustment 
+pot--the via will just give 12V or so. Pins 12 and 13 are located just 
+adjacent to the via. If you look at the traces on the board, the via 
+goes to pin 11, then there are pins 12 and 13, and then the last pin is 
+14.
+</p><p><br>
+<a href="http://reprap.org/wiki/File:Drv8825_vref.png" class="image" title="Место где настраивать Vref на &quot;Сделано в Китае&quot; плате DRV8825"><img alt="Место где настраивать Vref на &quot;Сделано в Китае&quot; плате DRV8825" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-url="/mediawiki/images/thumb/4/49/Drv8825_vref.png/400px-Drv8825_vref.png" height="300" width="400"></a>
+</p>
+<h2> <span class="mw-headline" id=".D0.A1.D0.BC.D0.B5.D1.88.D0.B8.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.88.D0.B0.D0.B3.D0.BE.D0.B2.D1.8B.D1.85_.D0.B4.D1.80.D0.B0.D0.B9.D0.B2.D0.B5.D1.80.D0.BE.D0.B2_A4988_.D0.B8_DRV8825"> Смешивание шаговых драйверов A4988 и DRV8825  </span></h2>
+<p>Да, можно! (протестировано и замечательно работает)
+</p><p><br>
+<a href="http://reprap.org/wiki/File:Stepper_drivers_mixed_a4988_drv8825_RAMPS_1a.jpg" class="image" title="Смешивание шаговых драйверов A4988 и DRV8825 на одном RAMPS 1.4? Да, можно!"><img alt="Смешивание шаговых драйверов A4988 и DRV8825 на одном RAMPS 1.4? Да, можно!" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-url="/mediawiki/images/thumb/5/5e/Stepper_drivers_mixed_a4988_drv8825_RAMPS_1a.jpg/500px-Stepper_drivers_mixed_a4988_drv8825_RAMPS_1a.jpg" height="407" width="500"></a>
+</p><p><br>
+Я решил протестировать на моей референсной <a href="http://reprap.org/wiki/P3Steel" title="P3Steel">P3Steel</a>.
+ Как указано ранее, я использовал шаговый драйвер DRV8825 для оси X и Y,
+ а шаговый драйвер A4988 для оси Z и для экструдера. у меня уже были 
+маленькие радиаторы на драйвере A4988 (не показано выше, сделаю снимки 
+позже) так что я просто оставил их там, с другой стороны я не установил 
+радиаторы на драйвер DRV8825 (см. ниже объяснения этого). Двенадцати 
+вольтовый 80mm вентилятор обеспечивает активное охлаждение для шаговых 
+драйверов и установленных на RAMPS 1.4 MOSFETs транзисторов. Шаговые 
+драйверы DRV8825 настроены на  1/32 микрошага, а шаговые драйверы A4988 
+установлены в  1/16 микрошага. Что касается настройки силы тока, я 
+использую два кардинально разных шаговых двигателя для оси X и оси Y, но
+ в основном я использую все шаговые двигатели в этом принтере на 70% от 
+их номинального максимального тока и они прекрасно работают и едва 
+греются на ощупь.
+</p><p>После перекомпиляции <a href="http://reprap.org/wiki/Marlin" title="Marlin">Marlin</a>
+ с удвоением от оригинальной прошивки количества шагов/мм для оси X и Y и
+ заливки в Arduino Mega 2560, я напечатал пару деталей для калибровки.
+</p><p>Честно говоря, я был приятно удивлен тем, насколько плавным стало
+ движение по осям X и Y с использованием 1/32 микрошага. Я подозреваю 
+что был неприятный резонанс с шаговым двигателем оси Y и тем как был 
+настроен драйвер A4988, но теперь резонанс полностью исчез, и принтер 
+стал печатать  более тише и меньше вибрировать чем раньше. Если 
+непредвиденные проблемы не возникнут в ближайшие несколько часов печати,
+ я  вероятно, никогда не вернусь на предыдущую конфигурацию.
+</p>
+<h2> <span class="mw-headline" id=".D0.A2.D0.B0.D0.B1.D0.BB.D0.B8.D1.86.D0.B0_.D1.81.D1.80.D0.B0.D0.B2.D0.BD.D0.B5.D0.BD.D0.B8.D1.8F"> Таблица сравнения </span></h2>
+<p>Таблица сравнения "Сделано в Китае" платы шагового драйвера A4988 и DRV8825, для использования в RepRap:
+</p>
+<table class="wikitable" border="1">
+
+<tbody><tr>
+<th scope="col">
+</th>
+<th scope="col"> A4988
+</th>
+<th scope="col"> DRV8825
+</th></tr>
+<tr>
+<td> Доступность </td>
+<td> очень широко распространена </td>
+<td> широко распростронена
+</td></tr>
+<tr>
+<td> Средняя стоимость </td>
+<td> $6.80 / 5 шт. </td>
+<td> $10 / 5 шт.
+</td></tr>
+<tr>
+<td> Мaкс. теоретический ток </td>
+<td> 2A </td>
+<td> 2.5A
+</td></tr>
+<tr>
+<td> Макс. микрошаги </td>
+<td> 16 </td>
+<td> 32
+</td></tr>
+<tr>
+<td> Цвет печатной платы </td>
+<td> Зелёный / Красный </td>
+<td> Фиолетовая
+</td></tr>
+<tr>
+<td> Подстроечное сопротивление сопротивления току </td>
+<td> Да, рядом с контактом Dir </td>
+<td> Да, рядом с контактом En
+</td></tr>
+<tr>
+<td> Типичное значение Rs </td>
+<td> 0.05 Ohm или<br>0.1 Ohm или<br>0.2 Ohm </td>
+<td> 0.1 Ohm
+</td></tr>
+<tr>
+<td> формула Vref (*) </td>
+<td> I_TripMax= Vref/(8*Rs) </td>
+<td> I_TripMax= Vref/(5*Rs)
+</td></tr>
+<tr>
+<td> Защита от перегрева (**) </td>
+<td> Да </td>
+<td> Да
+</td></tr>
+<tr>
+<td> Слоев печатной платы </td>
+<td> 2 </td>
+<td> 4
+</td></tr>
+<tr>
+<td> Маленький радиатор в комплекте (***) </td>
+<td> Почти всегда </td>
+<td> Иногда нет
+</td></tr>
+<tr>
+<td> Требует активного охлаждения? </td>
+<td> Рекомендуется </td>
+<td> Рекомендуется
+</td></tr>
+<tr>
+<td> Форм фактор </td>
+<td> 5x5mm 28-lead QFN </td>
+<td> 9.7x6.4mm 28HTSSOP
+</td></tr>
+ 
+</tbody></table>
+<p>Note that some important technical characteristics from the 
+respective datasheets of the ICs are not directly comparable. For 
+example, the DRV8825 is fully specified in terms of thermal 
+characteristics, the A4988 is not. Another important characteristic that
+ unfortunately is not directly comparable is RDSon, which is specified 
+at different current levels in the respective IC datasheets.
+</p><p><br>
+<b>(*) Регулировка тока шагового двигателя</b>
+</p><p>См. эти инструкции: <a href="http://reprap.org/wiki/Pololu_stepper_driver_board#Tuning_motor_current" title="Pololu stepper driver board">Pololu_stepper_driver_board#Tuning_motor_current</a>.
+</p><p><b>(**) Защита от перегрева</b>
+</p><p>Очень важно держать шаговый драйвер ниже определенной температуры
+ во время печати, так как оба шаговых драйвера имеют защиту от тепловой 
+перегрузки, и когда защита срабатывает (как правило драйвер в этот 
+момент умирает температура  достигает 150 ~ 160 С), отключаются выходные
+ каскады т.е. прерываются все команды в пострадавший шаговый двигатель, и
+ при этом, печать рушиться.
+</p><p><b>(***) Радиаторы</b>
+</p><p>Ещё достоверно не определили, насколько реально маленькие 
+алюминиевые радиаторы, показанные на изображениях выше, влияют на 
+охлаждении микросхем, так как для обоих шаговых драйверов гораздо больше
+ зависимость от правильной разводки печатной платы и припоя площадки 
+контакта (так же как надлежащий обдув воздухом, помните об этом!) для 
+отвода тепла, а не для рассеивания через верхнюю часть корпуса 
+микросхемы. Это потому, что оба шаговых драйвера имеют открытую 
+металлические площадку <i> 'под' </i> чипом, который опирается на 
+печатную плату, и это "путь наименьшего сопротивления" для рассеивания 
+тепла. Второй путь рассеивания идет через выводы чипа и в этом аспекте 
+DRV8825 обеспечивает, возможно, немного лучшее рассеивание мощности по 
+сравнению с безвыводным A4988. По моему мнению, рассеивание через 
+вершину микросхемы здесь практически не имеет значения.
+</p>
+<h2> <span class="mw-headline" id="Datasheets"> Datasheets </span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.ti.com/lit/ds/symlink/drv8825.pdf">DRV8825</a>
+</li><li> <a rel="nofollow" class="external text" href="http://www.allegromicro.com/en/Products/Motor-Driver-And-Interface-ICs/Bipolar-Stepper-Motor-Drivers/A4988.aspx">A4988</a>
+</li></ul>
+<p><br>
+</p>
+<h2> <span class="mw-headline" id=".D0.A1.D0.BB.D1.83.D1.87.D0.B0.D0.B8_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F"> Случаи использования </span></h2>
+<p>(добавьте сюда ваш собственный случай)
+</p><p><br>
+</p>
+<table class="wikitable" border="1">
+
+<tbody><tr>
+<th scope="col"> Пользователь
+</th>
+<th scope="col"> Кол-во плат
+</th>
+<th scope="col"> Тип шагового драйвера
+</th>
+<th scope="col"> Плата контроллера
+</th>
+<th scope="col"> Ток на оси XYZ
+</th>
+<th scope="col"> Ток на экструдер
+</th>
+<th scope="col"> Время использования
+</th>
+<th scope="col"> Картинка, если доступна
+</th>
+<th scope="col"> Примечания
+<p><br>
+</p>
+</th></tr>
+<tr>
+<td> AndrewBCN </td>
+<td> 4 </td>
+<td> A4988 </td>
+<td> RAMPS 1.4 </td>
+<td> 800mA </td>
+<td> 1A </td>
+<td> 3 месяца </td>
+<td> <a href="http://reprap.org/wiki/File:P3Steel_ramps_printing_2a.jpg" class="image" title="Arduino Mega 2560 + RAMPS 1.4 + 4 x A4988 шаговых драйвера + 80mm вентилятор, во время печати."><img alt="Arduino Mega 2560 + RAMPS 1.4 + 4 x A4988 шаговых драйвера + 80mm вентилятор, во время печати." src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-url="/mediawiki/images/thumb/b/b1/P3Steel_ramps_printing_2a.jpg/150px-P3Steel_ramps_printing_2a.jpg" height="165" width="150"></a> </td>
+<td> Охлаждение 80mm вентилятором дующим прямо на шаговые драйверы. Без нареканий.
+</td></tr>
+<tr>
+<td> AndrewBCN </td>
+<td> 4 </td>
+<td> 2 x A4988
+<p>+
+</p><p>2 x DRV8825
+</p>
+</td>
+<td> RAMPS 1.4 </td>
+<td> 800mA </td>
+<td> 1A </td>
+<td> Тестирование </td>
+<td> <a href="http://reprap.org/wiki/File:P3Steel_ramps_printing_2a.jpg" class="image" title="Arduino Mega 2560 + RAMPS 1.4 + 4 x A4988 шаговых драйвера + 80mm вентилятор, во время печати."><img alt="Arduino Mega 2560 + RAMPS 1.4 + 4 x A4988 шаговых драйвера + 80mm вентилятор, во время печати." src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-url="/mediawiki/images/thumb/b/b1/P3Steel_ramps_printing_2a.jpg/150px-P3Steel_ramps_printing_2a.jpg" height="165" width="150"></a> </td>
+<td> Та же конфигурация что и выше, замена драйверов для оси X и Y и 
+настройка на 1/32 микрошага. Плавное смещения Х и Y кареток, гораздо 
+меньше шума и вибрации, когда печатаешь по сравнению с предыдущей 
+конфигурацией.
+</td></tr>
+<tr>
+<td> Cloggie</td>
+<td> 4 </td>
+<td> 3 x A4988
+<p>+
+</p><p>1 x DRV8825 
+</p>
+</td>
+<td> RAMPS 1.4 </td>
+<td> Не замерял </td>
+<td> Не замерял </td>
+<td> Тестирование </td>
+<td> Нет </td>
+<td> RepRap Mendel. Замена шаговика экструдера на DRV8825 и настройка на
+ 1/16 микрошага. BullDog Lite начал печатать более качественно с 
+разрешением слоя в 50 микрон (До этого было 200 микрон). Настройки тока 
+не критичны для меня.
+</td></tr>
+
+
+<tr>
+<td> Шаблон</td>
+<td>&nbsp;? </td>
+<td>&nbsp;? </td>
+<td>&nbsp;? </td>
+<td>&nbsp;? </td>
+<td>&nbsp;? </td>
+<td>&nbsp;? </td>
+<td> N/A </td>
+<td> (Любая полезная информация добавляется сюда)
+</td></tr>
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 158/1000000
+Preprocessor generated node count: 672/1000000
+Post‐expand include size: 4274/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru&amp;oldid=154254">http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru&amp;oldid=154254</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://reprap.org/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="http://reprap.org/wiki/Category:Stepper_motor_drivers" title="Category:Stepper motor drivers">Stepper motor drivers</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<!-- header -->
+			<div id="mw-head">
+				
+<!-- 0 -->
+<div id="p-personal" role="navigation" class="">
+	<h3>Personal tools</h3>
+	<ul>
+<li id="pt-login"><a href="http://reprap.org/mediawiki/index.php?title=Special:UserLogin&amp;returnto=A4988+vs+DRV8825+Chinese+Stepper+Driver+Boards%2Fru" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+
+<!-- /0 -->
+				<div id="left-navigation">
+					
+<!-- 0 -->
+<div id="p-namespaces" role="navigation" class="vectorTabs">
+	<h3>Namespaces</h3>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="http://reprap.org/wiki/A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru" title="View the content page [alt-shift-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="http://reprap.org/mediawiki/index.php?title=Talk:A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+				</div>
+				<div id="right-navigation">
+					
+<!-- 0 -->
+<div id="p-views" role="navigation" class="vectorTabs">
+	<h3>Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="http://reprap.org/wiki/A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru">Read</a></span></li>
+					<li id="ca-viewsource"><span><a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet">
+	<h3><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/mediawiki/index.php" id="searchform">
+				<div>
+			<input name="search" title="Search RepRapWiki [alt-shift-f]" accesskey="f" id="searchInput" autocomplete="off" placeholder="Search" type="search">			<input name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" type="submit">			<input name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" type="submit">					<input name="title" value="Special:Search" type="hidden">
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+				</div>
+			</div>
+			<!-- /header -->
+			<!-- panel -->
+			<div id="mw-panel">
+				<!-- logo -->
+					<div id="p-logo" role="banner"><a style="background-image: url(/mediawiki/reprap_logo.png);" href="http://reprap.org/wiki/Main_Page" title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- navigation -->
+<div class="portal" role="navigation" id="p-navigation">
+	<h3>Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Main-Page"><a href="http://reprap.org/wiki/RepRap">Main Page</a></li>
+			<li id="n-Build-a-RepRap"><a href="http://reprap.org/wiki/RepRap_Options">Build a RepRap</a></li>
+			<li id="n-Glossary"><a href="http://reprap.org/wiki/Glossary">Glossary</a></li>
+			<li id="n-Reference"><a href="http://reprap.org/wiki/Reference">Reference</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- Participation -->
+<div class="portal" role="navigation" id="p-Participation">
+	<h3>Participation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Recent-Changes"><a href="http://reprap.org/wiki/Special:RecentChanges">Recent Changes</a></li>
+			<li id="n-Get-a-Wiki-account"><a href="http://forums.reprap.org/read.php?1,641102" rel="nofollow">Get a Wiki account</a></li>
+			<li id="n-Create-a-new-page"><a href="http://reprap.org/wiki/Very_Messy_Example">Create a new page</a></li>
+			<li id="n-Donation-Page"><a href="http://sourceforge.net/donate/index.php?group_id=159590" rel="nofollow">Donation Page</a></li>
+			<li id="n-Policy"><a href="http://reprap.org/wiki/Policy">Policy</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Participation -->
+
+<!-- Community -->
+<div class="portal" role="navigation" id="p-Community">
+	<h3>Community</h3>
+	<div class="body">
+		<ul>
+			<li id="n-RepRap-Forum"><a href="http://forums.reprap.org/" rel="nofollow">RepRap Forum</a></li>
+			<li id="n-RepRap-IRC"><a href="http://reprap.org/wiki/IRC">RepRap IRC</a></li>
+			<li id="n-Development-Index"><a href="http://reprap.org/wiki/Development">Development Index</a></li>
+			<li id="n-Planet-RepRap"><a href="http://planet.arcol.hu/" rel="nofollow">Planet RepRap</a></li>
+			<li id="n-RepRap-User-Groups"><a href="http://forums.reprap.org/index.php?19" rel="nofollow">RepRap User Groups</a></li>
+			<li id="n-Community-Portal"><a href="http://reprap.org/wiki/Community_portal">Community Portal</a></li>
+			<li id="n-Licence"><a href="http://reprap.org/wiki/RepRapGPLLicence">Licence</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Community -->
+
+<!-- TOOLBOX -->
+<div class="portal" role="navigation" id="p-tb">
+	<h3>Toolbox</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://reprap.org/wiki/Special:WhatLinksHere/A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://reprap.org/wiki/Special:RecentChangesLinked/A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="http://reprap.org/wiki/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru&amp;oldid=154254" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="http://reprap.org/mediawiki/index.php?title=A4988_vs_DRV8825_Chinese_Stepper_Driver_Boards/ru&amp;action=info">Page information</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+
+				<div class="portal" role="navigation" id="adsense">
+				<div class="body">
+				<!-- Google AdSense "skyscaper" block (125x600) -->
+<script type="text/javascript"><!--
+google_ad_client = "pub-7619640428450381";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "F9F9F9";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+//--></script>
+<script type="text/javascript" src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/show_ads.js">
+</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:120px;height:600px;" frameborder="0" height="600" width="120"></iframe></ins></ins>
+				</div>
+				</div>
+			</div>
+			<!-- /panel -->
+		</div>
+		<!-- footer -->
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 11 September 2015, at 01:31.</li>
+											<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://reprap.org/wiki/RepRapWiki:Privacy_policy" title="RepRapWiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://reprap.org/wiki/RepRapWiki:About" title="RepRapWiki:About">About RepRapWiki</a></li>
+											<li id="footer-places-disclaimer"><a href="http://reprap.org/wiki/RepRapWiki:General_disclaimer" title="RepRapWiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://www.gnu.org/copyleft/fdl.html"><img src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/gnu-fdl.png" alt="GNU Free Documentation License 1.2" height="31" width="88"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" height="31" width="88"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","ext.lazyload","skins.vector.js"],
+ null, true);
+}</script>
+<script src="A4988%20vs%20DRV8825%20Chinese%20Stepper%20Driver%20Boards_ru%20-%20RepRapWiki_files/load_005.php"></script>
+<!-- Served in 0.177 secs. -->
+	
+
+<div style="display: none; font-size: 13.3333px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div><iframe id="google_osd_static_frame_9915086597882" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

@@ -1,0 +1,2 @@
+.wikitable,.prettytable{margin:1em 1em 1em 0;background:#f9f9f9;border:1px #AAA solid;border-collapse:collapse;empty-cells:show}.wikitable th,.wikitable td,.prettytable th,.prettytable td{border:1px #AAA solid;padding:0.3em}.wikitable caption,.prettytable caption{font-weight:bold}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:33b77d40c0b5191288474ba5ab57caa5 */
