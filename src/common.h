@@ -7,6 +7,7 @@
 #ifndef COMMON_H
 #define COMMON_H
 
+#include <stdlib.h>
 #include <stdint.h>
 
 #define MILLISECONDS_IN_SIDERAL_DAY 86164000 // 86164.09054 seconds
