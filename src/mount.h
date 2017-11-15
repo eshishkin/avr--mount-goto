@@ -4,8 +4,6 @@
 #include <stddef.h>
 #include "common.h"
 
-#define ANGLE_MILLIS_IN_CIRCLE 1296000000
-
 struct EQPosition {
 	unsigned long ra;
 	unsigned long dec;
