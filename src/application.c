@@ -4,11 +4,13 @@
 
 #include "common.h"
 #include "mount.h"
+#include "queue.h"
 
 #define TRANSMISSION_RATE 144 * 4
 #define STEPS_PER_ROUND 400
 
 volatile struct EQMount* mount;
+TaskQueue* tasks;
 
 ISR(TIMER0_OVF_vect, ISR_NOBLOCK) {
 	cli();
@@ -30,10 +32,15 @@ int main(void) {
 	//
 	//sei();
 
+	tasks = queue_create();
+
 	mount = createMount(STEPS_PER_ROUND, TRANSMISSION_RATE);
 	
 	
 	while(1) {	
+		Task* task = tk_poll(tasks);
+		// do something
+		free(task);
 	}
 	
 	return 0; 
