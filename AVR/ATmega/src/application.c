@@ -1,7 +1,10 @@
+#define F_CPU 16000000
+
 #include <avr/io.h>
 #include <avr/interrupt.h>  
 #include <util/delay.h>
 
+#include "usbdrv/usbdrv.h"
 #include "common.h"
 #include "mount.h"
 #include "queue.h"
